@@ -1,4 +1,4 @@
-###INSTALATION
+### INSTALATION
 
 git clone git@github.com:CodeMiner84/nestjs-server.git backend
 

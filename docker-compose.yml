@@ -5,7 +5,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    command: npm start
+    command: yarn start:dev
     volumes:
       - ./backend/:/usr/app
       - /usr/app/node_modules
@@ -14,6 +14,8 @@ services:
     environment:
       - NODE_ENV=development
       - CHOKIDAR_USEPOLLING=true
+    links:
+      - mariadb
   frontend:
     container_name: jsshop-front
     build:
@@ -21,7 +23,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - 3000:3000
-    command: npm start
+    # command: yarn start
     volumes:
       - './frontend:/usr/app'
       - '/usr/app/node_modules'
@@ -44,6 +46,13 @@ services:
     restart: always
     ports:
       - 8080:8080
+  mailhog:
+    container_name: jssho-mailhog
+    image: mailhog/mailhog
+    user: root
+    ports:
+      - "1025:1025"
+      - "8025:8025"
 
 volumes:
     jsshop:

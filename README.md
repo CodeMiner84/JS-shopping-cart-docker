@@ -2,9 +2,9 @@
 
 #### Repositories
 
-`git clone git@github.com:CodeMiner84/JS-shopping-cart-api.git`
+`git clone git@github.com:CodeMiner84/JS-shopping-cart-api.git ap`
 
-`git clone git@github.com:CodeMiner84/JS-shopping-cart-ui.git`
+`git clone git@github.com:CodeMiner84/JS-shopping-cart-ui.git ui`
 
 `docker-compose build`
 

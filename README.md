@@ -2,7 +2,7 @@
 
 #### Repositories
 
-`git clone git@github.com:CodeMiner84/JS-shopping-cart-api.git ap`
+`git clone git@github.com:CodeMiner84/JS-shopping-cart-api.git api`
 
 `git clone git@github.com:CodeMiner84/JS-shopping-cart-ui.git ui`
 
